@@ -1,0 +1,100 @@
+{
+	"info": {
+		"_postman_id": "9af69818-54d7-4146-af22-67435ea2614e",
+		"name": "Neo4J-app-api-tests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET-Employee",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:4114/api/employee/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4114",
+					"path": [
+						"api",
+						"employee",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT-Employee",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:4114/api/employee/?id=1&name=Bob Smith",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4114",
+					"path": [
+						"api",
+						"employee",
+						""
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						},
+						{
+							"key": "name",
+							"value": "Bob Smith"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE-Employee",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:4114/api/employee/?id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4114",
+					"path": [
+						"api",
+						"employee",
+						""
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
